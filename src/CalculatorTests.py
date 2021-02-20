@@ -29,6 +29,13 @@ class MyTestCase(unittest.TestCase):
         csv_data.clear()
 
 
+    def test_subtract_method_calculator(self):
+        data_path = 'src/Subtraction.csv'
+        csv_data = self.testData.csv(data_path)
+        for row in csv_data:
+            self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), int(row['Result']))
+        csv_data.clear()
+
 
 
 
