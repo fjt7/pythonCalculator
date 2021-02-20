@@ -61,7 +61,12 @@ class MyTestCase(unittest.TestCase):
             csv_data.clear()
 
 
-
+    def test_squareRoot_method_calculator(self):
+        data_path = 'src/SquareRoot.csv'
+        csv_data = self.testData.csv(data_path)
+        for row in csv_data:
+            self.assertEqual(self.calculator.squarerooting(row['Value 1']), float(row['Result']))
+            csv_data.clear()
 
 
 if __name__ == '__main__':
