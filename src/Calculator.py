@@ -2,6 +2,8 @@ import CsvReader
 import math
 
 
+# Static Methods for addition, subtraction, multiplication, division, square, and square root
+
 def addition(a, b):
     a = int(a)
     b = int(b)
