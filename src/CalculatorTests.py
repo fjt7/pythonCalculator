@@ -45,6 +45,14 @@ class MyTestCase(unittest.TestCase):
         csv_data.clear()
 
 
+    def test_divide_method_calculator(self):
+        data_path = 'src/Division.csv'
+        csv_data = self.testData.csv(data_path)
+        for row in csv_data:
+            self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), float(row['Result']))
+        csv_data.clear()
+
+
 
 
 
