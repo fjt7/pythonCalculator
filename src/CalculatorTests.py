@@ -19,6 +19,9 @@ class MyTestCase(unittest.TestCase):
     def test_results_multiplication_method(self):
         self.assertEqual(self.calculator.multiply(8, 8), 64)
 
+    def test_results_division_method(self):
+        self.assertEqual(self.calculator.divide(72, 8), 9)
+
 
 if __name__ == '__main__':
     unittest.main()

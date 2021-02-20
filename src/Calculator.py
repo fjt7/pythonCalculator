@@ -4,14 +4,16 @@ def addition(a, b):
 
 
 def subtraction(a, b):
-    a = int(a)
-    b = int(b)
     c = b - a
     return c
 
 
 def multiplication(a, b):
     c = a * b
+    return c
+
+def division(a,b):
+    c = a/b
     return c
 
 
@@ -31,4 +33,8 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = division(a, b)
         return self.result
