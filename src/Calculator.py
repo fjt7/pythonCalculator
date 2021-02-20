@@ -12,9 +12,17 @@ def multiplication(a, b):
     c = a * b
     return c
 
-def division(a,b):
-    c = a/b
+
+def division(a, b):
+    c = a / b
     return c
+
+
+def square(a):
+    c = a ** 2
+    return c
+
+
 
 
 class Calculator:
@@ -38,3 +46,9 @@ class Calculator:
     def divide(self, a, b):
         self.result = division(a, b)
         return self.result
+
+    def squaring(self, a):
+        self.result = square(a)
+        return self.result
+
+
