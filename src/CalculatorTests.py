@@ -37,6 +37,15 @@ class MyTestCase(unittest.TestCase):
         csv_data.clear()
 
 
+    def test_multiply_method_calculator(self):
+        data_path = 'src/Multiplication.csv'
+        csv_data = self.testData.csv(data_path)
+        for row in csv_data:
+            self.assertEqual(self.calculator.multiply(row['Value 1'], row['Value 2']), float(row['Result']))
+        csv_data.clear()
+
+
+
 
 
 if __name__ == '__main__':
