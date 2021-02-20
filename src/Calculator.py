@@ -1,34 +1,43 @@
 import CsvReader
+import math
 
 
 def addition(a, b):
+    a = int(a)
+    b = int(b)
     c = a + b
     return c
 
 
 def subtraction(a, b):
+    a = int(a)
+    b = int(b)
     c = b - a
     return c
 
 
 def multiplication(a, b):
+    a = int(a)
+    b = int(b)
     c = a * b
     return c
 
 
 def division(a, b):
-    c = a / b
+    a = float(a)
+    b = float(b)
+    c = round(b / a, 9)
     return c
 
 
 def square(a):
-    c = a ** 2
-    return c
+    a = int(a)
+    b = a * a
+    return b
 
 
 def squareroot(a):
-    c = a ** (1 / 2)
-    return c
+    return round(math.sqrt(float(a)), 9)  # Second Parameter Rounds By (Decimal Places)
 
 
 def mean(data):
@@ -47,7 +56,7 @@ class Calculator:
         return self.result
 
     def subtract(self, a, b):
-        self.result = subtraction(b, a)
+        self.result = subtraction(a, b)
         return self.result
 
     def multiply(self, a, b):
