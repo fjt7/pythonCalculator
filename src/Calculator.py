@@ -23,7 +23,9 @@ def square(a):
     return c
 
 
-
+def squareroot(a):
+    c = a ** (1 / 2)
+    return c
 
 class Calculator:
     result = 0
@@ -51,4 +53,6 @@ class Calculator:
         self.result = square(a)
         return self.result
 
-
+    def squarerooting(self, a):
+        self.result = squareroot(a)
+        return self.result

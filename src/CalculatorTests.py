@@ -25,7 +25,8 @@ class MyTestCase(unittest.TestCase):
     def test_results_square_method(self):
         self.assertEqual(self.calculator.squaring(5), 25)
     
-
+    def test_results_squareroot_method(self):
+        self.assertEqual(self.calculator.squarerooting(169), 13)
 
 
 
